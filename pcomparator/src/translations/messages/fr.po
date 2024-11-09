@@ -30,11 +30,11 @@ msgstr "Compte supprimé"
 msgid "Account Settings"
 msgstr "Paramètres de compte"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonDesktop.tsx
 msgid "Add new price by scanning barcode"
 msgstr "Ajouter un nouveau prix en scannant le code-barre"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonDesktop.tsx
 msgid "Add new price by typing barcode"
 msgstr "Ajouter un nouveau prix en saisissant le code-barre"
 
@@ -215,7 +215,7 @@ msgstr "Prix"
 msgid "Price deleted"
 msgstr "Prix supprimé"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/index.tsx
 msgid "Price for {productName} added!"
 msgstr "Prix pour {productName} ajouté !"
 
@@ -232,7 +232,8 @@ msgstr "Retourner à l'app"
 msgid "Save"
 msgstr "Sauvegarder"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonDesktop.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonMobile.tsx
 msgid "Scan barcode"
 msgstr "Scanner code-barre"
 
@@ -277,7 +278,8 @@ msgstr "Ceci est votre avatar."
 msgid "Type \"delete {0}\" to confirm"
 msgstr "Saisissez \"supprimer {0}\" pour confirmer"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonDesktop.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonMobile.tsx
 msgid "Type barcode"
 msgstr "Type de code-barre"
 

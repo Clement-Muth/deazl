@@ -1,5 +1,5 @@
 import { fireEvent, render, waitFor } from "~/test/componentUtils";
-import { NewPriceButton } from "./NewPriceButton";
+import { NewPriceButton } from ".";
 
 jest.mock("~/applications/Prices/Api/createPrice", () => ({ createPrice: () => Promise.resolve() }));
 jest.mock("react-barcode-scanner", () => ({ BarcodeScanner: () => <></> }));

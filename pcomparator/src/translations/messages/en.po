@@ -30,11 +30,11 @@ msgstr "Account deleted"
 msgid "Account Settings"
 msgstr "Account Settings"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonDesktop.tsx
 msgid "Add new price by scanning barcode"
 msgstr "Add new price by scanning barcode"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonDesktop.tsx
 msgid "Add new price by typing barcode"
 msgstr "Add new price by typing barcode"
 
@@ -215,7 +215,7 @@ msgstr "Price"
 msgid "Price deleted"
 msgstr "Price deleted"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/index.tsx
 msgid "Price for {productName} added!"
 msgstr "Price for {productName} added!"
 
@@ -232,7 +232,8 @@ msgstr "Return to the app"
 msgid "Save"
 msgstr "Save"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonDesktop.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonMobile.tsx
 msgid "Scan barcode"
 msgstr "Scan barcode"
 
@@ -277,7 +278,8 @@ msgstr "This is your avatar."
 msgid "Type \"delete {0}\" to confirm"
 msgstr "Type \"delete {0}\" to confirm"
 
-#: src/applications/Prices/Ui/NewPrice/NewPriceButton.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonDesktop.tsx
+#: src/applications/Prices/Ui/NewPrice/NewPriceButton/NewPriceButtonMobile.tsx
 msgid "Type barcode"
 msgstr "Type barcode"
 
