@@ -216,8 +216,7 @@ msgstr "Veuillez utiliser 32 caractères maximum."
 msgid "Previous"
 msgstr "Précédent"
 
-#: src/applications/Prices/Ui/NewPrice/FormSteps/Step2/Price.tsx
-#: src/applications/Prices/Ui/NewPrice/NewPiceModal.tsx
+#: src/applications/Prices/Ui/NewQuickPrice/NewQuickPrice.tsx
 msgid "Price"
 msgstr "Prix"
 
@@ -229,10 +228,6 @@ msgstr "Prix supprimé"
 msgid "Price for {productName} added!"
 msgstr "Prix pour {productName} ajouté !"
 
-#: src/applications/Searchbar/Ui/Searchbar.tsx
-msgid "Prices for {0}"
-msgstr "Prix pour {0}"
-
 #: src/applications/Searchbar/Ui/SearchResult/SearchResultModal.tsx
 msgid "Prices for {search}"
 msgstr "Prix pour {search}"
@@ -240,6 +235,10 @@ msgstr "Prix pour {search}"
 #: src/applications/Prices/Ui/ListPrices/CardPrice/SeeMoreModal.tsx
 msgid "Product"
 msgstr "Produit"
+
+#: src/applications/Prices/Ui/NewQuickPrice/NewQuickPrice.tsx
+msgid "Product \"{productName}\" was not found but added to your account."
+msgstr "Produit \"{productName}\" n'a pas été trouvé mais à été ajouté  votre compte."
 
 #: src/app/[locale]/dashboard/layout.tsx
 msgid "Return to the app"

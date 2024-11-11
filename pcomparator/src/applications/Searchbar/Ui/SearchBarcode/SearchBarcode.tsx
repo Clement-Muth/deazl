@@ -1,5 +1,3 @@
-"use client";
-
 import { Button, useDisclosure } from "@nextui-org/react";
 import { ScanBarcode } from "lucide-react";
 import { useState, useTransition } from "react";
@@ -8,7 +6,11 @@ import { searchByBarcode } from "~/applications/Searchbar/Api/searchByBarcode";
 import { BarcodeScannerModal } from "~/applications/Searchbar/Ui/SearchBarcode/BarcodeScannerModal";
 import { SearchResultModal } from "~/applications/Searchbar/Ui/SearchResult/SearchResultModal";
 
-export const SearchBarcode = () => {
+interface SearchBarcodeProps {
+  onNewProduct: (productName: string) => void;
+}
+
+export const SearchBarcode = ({ onNewProduct }: SearchBarcodeProps) => {
   const [pending, startTransition] = useTransition();
   const { onOpen, onClose, isOpen, onOpenChange } = useDisclosure();
   const [searchResult, setSearchResult] = useState<Awaited<ReturnType<typeof search>> | null>(null);
@@ -26,7 +28,12 @@ export const SearchBarcode = () => {
                 const formData = new FormData();
 
                 formData.append("search", name);
-                setSearchResult(await search(null, formData));
+                const results = await search(null, formData);
+
+                if (!results.prices) {
+                  onNewProduct(results.search);
+                  onClose();
+                } else setSearchResult(results);
               });
           }}
         />

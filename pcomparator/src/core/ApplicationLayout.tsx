@@ -1,9 +1,8 @@
 import type { ReactNode } from "react";
 import { SignButton } from "~/applications/Authentication/Ui/Signin/SignButton/SignButton";
-import { SearchBarcode } from "~/applications/Searchbar/Ui/SearchBarcode/SearchBarcode";
 import { Header } from "~/components/Header/Header";
-import { Tabbar } from "~/components/Tabbar/Tabbar";
 import { Toast } from "~/components/Toast/Toast";
+import { Tabbar } from "~/core/Tabbar";
 import { getDevice } from "~/core/getDevice";
 
 export interface ApplicationLayoutProps {
@@ -17,7 +16,7 @@ const ApplicationLayout = async ({ children }: ApplicationLayoutProps) => {
     <>
       <Header rightArea={<SignButton />} />
       {children}
-      {device === "mobile" ? <Tabbar mainButton={<SearchBarcode />} /> : null}
+      {device === "mobile" ? <Tabbar /> : null}
       <Toast />
     </>
   );
